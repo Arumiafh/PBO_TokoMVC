@@ -14,6 +14,8 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import dao.daoToko;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import model.modelToko;
 import view.viewHome;
 import model.modelTableToko;

@@ -49,6 +49,7 @@ public class viewLogin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jtextUsername = new javax.swing.JTextField();
         jtextPassword = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
 
         jToolBar1.setRollover(true);
 
@@ -90,7 +91,7 @@ public class viewLogin extends javax.swing.JFrame {
         buttonExit.setBounds(200, 20, 80, 30);
 
         jPanel3.add(jPanel2);
-        jPanel2.setBounds(30, 230, 300, 70);
+        jPanel2.setBounds(30, 240, 300, 70);
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setLayout(null);
@@ -98,16 +99,16 @@ public class viewLogin extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Username");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 20, 300, 30);
+        jLabel1.setBounds(0, 50, 300, 30);
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Password");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 100, 300, 30);
+        jLabel2.setBounds(0, 120, 300, 30);
 
         jtextUsername.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(jtextUsername);
-        jtextUsername.setBounds(60, 50, 180, 30);
+        jtextUsername.setBounds(60, 80, 180, 30);
 
         jtextPassword.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jtextPassword.addActionListener(new java.awt.event.ActionListener() {
@@ -116,10 +117,17 @@ public class viewLogin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jtextPassword);
-        jtextPassword.setBounds(60, 130, 180, 30);
+        jtextPassword.setBounds(60, 150, 180, 30);
+
+        jLabel3.setBackground(new java.awt.Color(255, 255, 51));
+        jLabel3.setFont(new java.awt.Font("Secular One", 1, 18)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("LOGIN");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(0, 20, 300, 27);
 
         jPanel3.add(jPanel1);
-        jPanel1.setBounds(30, 30, 300, 190);
+        jPanel1.setBounds(30, 30, 300, 200);
 
         getContentPane().add(jPanel3);
         jPanel3.setBounds(0, 0, 370, 340);
@@ -225,6 +233,7 @@ public class viewLogin extends javax.swing.JFrame {
     private javax.swing.JButton buttonSignUp;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
