@@ -39,21 +39,60 @@ public class viewLogin extends javax.swing.JFrame {
     private void initComponents() {
 
         jToolBar1 = new javax.swing.JToolBar();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        buttonSignIn = new javax.swing.JButton();
+        buttonSignUp = new javax.swing.JButton();
+        buttonExit = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jtextUsername = new javax.swing.JTextField();
         jtextPassword = new javax.swing.JTextField();
-        jPanel2 = new javax.swing.JPanel();
-        buttonSignIn = new javax.swing.JButton();
-        buttonSignUp = new javax.swing.JButton();
-        buttonExit = new javax.swing.JButton();
 
         jToolBar1.setRollover(true);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 51, 51));
         getContentPane().setLayout(null);
 
+        jPanel3.setBackground(new java.awt.Color(0, 51, 51));
+        jPanel3.setLayout(null);
+
+        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel2.setLayout(null);
+
+        buttonSignIn.setText("Sign In");
+        buttonSignIn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSignInActionPerformed(evt);
+            }
+        });
+        jPanel2.add(buttonSignIn);
+        buttonSignIn.setBounds(30, 20, 70, 30);
+
+        buttonSignUp.setText("Sign Up");
+        buttonSignUp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSignUpActionPerformed(evt);
+            }
+        });
+        jPanel2.add(buttonSignUp);
+        buttonSignUp.setBounds(110, 20, 80, 30);
+
+        buttonExit.setText("Exit");
+        buttonExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonExitActionPerformed(evt);
+            }
+        });
+        jPanel2.add(buttonExit);
+        buttonExit.setBounds(200, 20, 80, 30);
+
+        jPanel3.add(jPanel2);
+        jPanel2.setBounds(30, 230, 300, 70);
+
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setLayout(null);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -79,42 +118,13 @@ public class viewLogin extends javax.swing.JFrame {
         jPanel1.add(jtextPassword);
         jtextPassword.setBounds(60, 130, 180, 30);
 
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(40, 30, 300, 190);
+        jPanel3.add(jPanel1);
+        jPanel1.setBounds(30, 30, 300, 190);
 
-        jPanel2.setLayout(null);
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(0, 0, 370, 340);
 
-        buttonSignIn.setText("Sign In");
-        buttonSignIn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonSignInActionPerformed(evt);
-            }
-        });
-        jPanel2.add(buttonSignIn);
-        buttonSignIn.setBounds(20, 20, 70, 30);
-
-        buttonSignUp.setText("Sign Up");
-        buttonSignUp.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonSignUpActionPerformed(evt);
-            }
-        });
-        jPanel2.add(buttonSignUp);
-        buttonSignUp.setBounds(110, 20, 80, 30);
-
-        buttonExit.setText("Exit");
-        buttonExit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonExitActionPerformed(evt);
-            }
-        });
-        jPanel2.add(buttonExit);
-        buttonExit.setBounds(210, 20, 80, 30);
-
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(40, 230, 310, 70);
-
-        setBounds(0, 0, 413, 366);
+        setBounds(0, 0, 381, 374);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jtextPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtextPasswordActionPerformed
@@ -217,6 +227,7 @@ public class viewLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JTextField jtextPassword;
     private javax.swing.JTextField jtextUsername;

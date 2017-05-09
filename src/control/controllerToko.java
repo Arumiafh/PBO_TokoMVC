@@ -107,7 +107,7 @@ public class controllerToko {
     {
         if(!hm.getCbCariKategori().getSelectedItem().toString().isEmpty())
         {   
-            impToko.getCariKategori((String)hm.getCbCariKategori().getSelectedItem()); 
+           // impToko.getCariKategori((String)hm.getCbCariKategori().getSelectedItem()); 
             isiTableCariKategori(); 
         }
         else
@@ -119,7 +119,8 @@ public class controllerToko {
     
     public void isiTableCariKategori()
     {
-       lt =impToko.getCariKategori((String) hm.getCbKategori().getSelectedItem()); 
+       String item = hm.getCbCariKategori().getSelectedItem().toString();
+       lt =impToko.getCariKategori(item); 
        modelTableToko tmt = new modelTableToko(lt); 
        hm.getTableData().setModel(tmt);
     }
